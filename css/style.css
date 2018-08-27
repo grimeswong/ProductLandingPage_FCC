@@ -1,0 +1,4 @@
+html, body {  /* reset the user agent setting*/
+    margin: 0;
+    padding: 0;
+}

@@ -31,10 +31,11 @@ html, body {  /* reset the user agent setting*/
   float: right;
 }
 
-#nav-list > li {
+#nav-list li {
   display: inline;
   padding: 15px;
   font-size: 1.2em;
+  font-family: "Fredoka One", sans-serif;
 }
 
 /* Main */

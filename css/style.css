@@ -36,6 +36,11 @@ html, body {  /* reset the user agent setting*/
   padding: 15px;
   font-size: 1.2em;
   font-family: "Fredoka One", sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+#nav-list li:hover {
+  color: rgba(59, 59, 59, 0.5);
 }
 
 /* Main */

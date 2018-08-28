@@ -13,20 +13,28 @@ html, body {  /* reset the user agent setting*/
   background-color: rgb(255, 255, 255);
 }
 
-#header-img{
-  margin: 0;
-  padding: 20px;
-  float: left;
+#nav-bar {
+  height: 100%;
+  padding: 0 5%;
 }
 
-#nav-bar ul {
+#header-img {
+  padding: 10px;
+  max-height: 80%;
+}
+
+#nav-list {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  height: 100%;
+  line-height: 100px;
   float: right;
 }
 
-#nav-bar li {
+#nav-list > li {
   display: inline;
+  padding: 15px;
+  font-size: 1.2em;
 }
 
 /* Main */

@@ -81,6 +81,7 @@ html, body {  /* reset the user agent setting*/
 }
 
 #section-hero {
+  padding-top: 100px;  /* avoid nav-bar cover the top content of section-hero */
   width: 100%;
   height: 800px;
   background-color: rgb(140, 217, 255);

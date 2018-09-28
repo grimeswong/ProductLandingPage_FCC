@@ -12,11 +12,12 @@ html, body {  /* reset the user agent setting*/
   display: block;
   color: rgb(26, 24, 24);
   background-color: rgb(255, 255, 255);
+  position: fixed;
 }
 
 #nav-bar {
-  height: 100%;
   padding: 0 5%;
+  height: 100%;
 }
 
 #nav-bar li {

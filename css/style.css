@@ -18,12 +18,46 @@ html, body {  /* reset the user agent setting*/
   padding: 0 5%;
 }
 
-#header-img {
-  padding: 10px;
-  max-height: 80%;
+#nav-bar li {
+  display: inline;
+  font-family: "Fredoka One", sans-serif;
+  color: rgb(59, 59, 59);
+  height: 100%;
 }
 
-#nav-list {
+#nav-bar a {
+  text-decoration: none;
+}
+
+#nav-bar a:hover {
+  color: rgba(59, 59, 59, 0.7);
+}
+
+#nav-bar a:visited {
+  color: rgb(59, 59, 59);
+}
+
+#nav-list-left {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 100px;
+  float: left;
+}
+
+#nav-list-left li{
+  font-size: 1.5em;
+  padding: 0 5px;
+}
+
+#header-img {
+  display: inline;
+  padding: 10px;
+  height: 80%;
+  float: left;
+}
+
+#nav-list-right {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -31,17 +65,11 @@ html, body {  /* reset the user agent setting*/
   float: right;
 }
 
-#nav-list li {
-  display: inline;
+#nav-list-right li {
   padding: 15px;
   font-size: 1.2em;
-  font-family: "Fredoka One", sans-serif;
-  color: rgb(59, 59, 59);
 }
 
-#nav-list li:hover {
-  color: rgba(59, 59, 59, 0.5);
-}
 
 /* Main */
 #main {

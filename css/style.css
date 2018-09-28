@@ -47,13 +47,14 @@ html, body {  /* reset the user agent setting*/
 
 #nav-list-left li{
   font-size: 1.5em;
+  padding: 0 5px;
 }
 
 #header-img {
-  height: 100px;
-}
-
-#company-title {
+  display: inline;
+  padding: 10px;
+  height: 80%;
+  float: left;
 }
 
 #nav-list-right {

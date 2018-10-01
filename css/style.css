@@ -93,7 +93,8 @@ html, body {  /* reset the user agent setting*/
   width: 80%;
   height: 600px;
   background-color: black;
-}
+  display: grid;
+  grid-template-columns: 40% 60%;
 
 #main-wrapper {
   margin: 0 auto;

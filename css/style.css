@@ -92,9 +92,21 @@ html, body {  /* reset the user agent setting*/
   margin: 0 auto;
   width: 80%;
   height: 600px;
-  background-color: black;
+  /* background-color: black;  /* Tester: delete when finalise */
   display: grid;
   grid-template-columns: 40% 60%;
+  color: black;
+}
+
+.left-hero {
+  margin: 0 auto;  /* centralise the image */
+  padding: 200px 20px 20px;
+}
+
+.right-hero {
+  padding: 200px 20px 20px;
+  text-align: left;
+}
 
 #main-wrapper {
   margin: 0 auto;

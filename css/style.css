@@ -135,8 +135,18 @@ html, body {  /* reset the user agent setting*/
 }
 
 #feature-list {
+  margin: 50px auto;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
+  background-color: rgb(254, 252, 84); /* for testing the layout only, can delete once is done */
+  text-align: center;
+}
+
+#feature-list li {
+  padding: 0 40px;
+  list-style-type: none;
 }
 
 #section-video {

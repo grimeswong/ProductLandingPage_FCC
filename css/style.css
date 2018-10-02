@@ -94,7 +94,8 @@ html, body {  /* reset the user agent setting*/
   height: 600px;
   display: grid;
   grid-template-columns: 40% 60%;
-  color: black;
+  color: rgb(37, 37, 37);
+  font-family: Roboto, sans-serif;
 }
 
 .left-hero {

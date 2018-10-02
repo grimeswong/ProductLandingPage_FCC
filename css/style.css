@@ -76,7 +76,7 @@ html, body {  /* reset the user agent setting*/
 /* Main */
 #main {
   width: 100%;
-  background-color: rgba(73, 186, 111, 1);
+  background-color: rgba(73, 186, 111, 1); /* for testing the layout only, can delete once is done */
   color: rgb(255, 255, 255);
 }
 
@@ -136,16 +136,25 @@ html, body {  /* reset the user agent setting*/
 #feature-list {
   margin: 0px auto;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  background-color: rgb(254, 252, 84); /* for testing the layout only, can delete once is done */
+  background-color: rgb(255, 255, 255);
 }
 
 .feature-item {
   padding: 40px 20px;
+  display: flex;
   list-style-type: none;
   text-align: left;
+}
+
+.feature-icon img {
+  padding: 20px 0;
+  width: 100px;
+}
+
+.feature-desc {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #section-video {

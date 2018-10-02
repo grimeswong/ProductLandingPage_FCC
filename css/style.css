@@ -76,7 +76,7 @@ html, body {  /* reset the user agent setting*/
 /* Main */
 #main {
   width: 100%;
-  background-color: rgba(73, 186, 111, 1);
+  background-color: rgba(73, 186, 111, 1); /* for testing the layout only, can delete once is done */
   color: rgb(255, 255, 255);
 }
 
@@ -128,20 +128,33 @@ html, body {  /* reset the user agent setting*/
   text-align: center;
 }
 
-#section-form {
-  height: 100px;
-  background-color: rgb(56, 182, 244);
-}
-
 #section-feature {
   width: 100%;
-  height: 400px;
   background-color: rgb(251, 100, 122)
 }
 
 #feature-list {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.feature-item {
+  padding: 40px 20px;
   display: flex;
-  justify-content: center;
+  list-style-type: none;
+  text-align: left;
+}
+
+.feature-icon img {
+  padding: 20px 0;
+  width: 100px;
+}
+
+.feature-desc {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #section-video {
@@ -159,6 +172,12 @@ html, body {  /* reset the user agent setting*/
   background-color: rgb(251, 147, 103)
 }
 
+#section-form {
+  height: 100px;
+  background-color: rgb(56, 182, 244);
+}
+
+/* Footer */
 #footer {
   margin:0;
   width: 100%;

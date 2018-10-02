@@ -92,7 +92,32 @@ html, body {  /* reset the user agent setting*/
   margin: 0 auto;
   width: 80%;
   height: 600px;
-  background-color: black;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: rgb(37, 37, 37);
+  font-family: Roboto, sans-serif;
+}
+
+.left-hero {
+  margin: 0 auto;  /* centralise the image */
+  padding: 200px 20px 20px;
+}
+
+.right-hero {
+  padding: 200px 20px 20px;
+  text-align: left;
+}
+
+#hero-intro-title {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#hero-intro-description {
+  margin: 0;
+  padding: 1em 0 1em;
+  font-size: 1em;
 }
 
 #main-wrapper {

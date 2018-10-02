@@ -158,11 +158,14 @@ html, body {  /* reset the user agent setting*/
 }
 
 #section-video {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 80%;
-  height: 300px;
   text-align: center;
-  background-color: rgb(177, 108, 246);
+}
+
+iframe {
+  width: 640px;
+  height: 390px;
 }
 
 #section-pricing {

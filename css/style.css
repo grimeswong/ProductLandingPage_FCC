@@ -170,9 +170,13 @@ iframe {
 
 #section-pricing {
   margin: 0 auto;
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 400px;    /* will be delete after setup the pricing elements */
   background-color: rgb(251, 147, 103)
+}
+
+#pricing-wrapper {
+  
 }
 
 #section-form {

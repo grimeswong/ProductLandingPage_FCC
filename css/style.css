@@ -169,13 +169,13 @@ iframe {
 }
 
 #section-pricing {
-  margin: 150px auto;
+  margin: 0 auto;
+  padding: 150px 0;
   width: 100%;
   background-color: rgb(103, 189, 251);  /* delete after testing */
 }
 
 #section-pricing-title {
-  padding-top: 50px;
   color: rgb(59, 59, 59);
   font-size: 2.5em;
   font-weight: bold;

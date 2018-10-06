@@ -222,6 +222,28 @@ iframe {
   font-size: 1em;
 }
 
+#section-form button {
+  margin: 10px 20px;
+  padding: 10px;
+  width: 100px;
+  border: solid 1px rgb(121, 210, 249);
+  border-radius: 3px;
+  color: rgb(251, 251, 251);
+  background-color: rgb(121, 210, 249);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#section-form a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#section-form button:hover {
+  background-color: rgb(78, 199, 252);
+}
+
+
 /* Footer */
 #footer {
   margin:0;

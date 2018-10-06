@@ -200,11 +200,26 @@ iframe {
   height: 300px;
   background-color: rgb(237, 251, 152);
   text-align: center;
+  font-family: Roboto, sans-serif;
 }
 
 #section-form-title {
   padding-top: 50px;
-  font-family: Roboto, sans-serif;
+  font-size: 2.5em
+}
+
+#section-form label {
+  display: block;
+  font-size: 1.5em;
+}
+
+#section-form input {
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  font-size: 1em;
 }
 
 /* Footer */

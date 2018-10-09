@@ -198,7 +198,7 @@ iframe {
 
 #section-form {
   height: 300px;
-  background-color: rgb(237, 251, 152);
+  /* background-color: rgb(237, 251, 152);  /* Deleted after testing */ */
   text-align: center;
   font-family: Roboto, sans-serif;
 }
@@ -216,7 +216,7 @@ iframe {
 #section-form input {
   margin: 10px auto;
   padding: 10px;
-  width: 200px;
+  min-width: 200px;
   border: solid 1px #ccc;
   border-radius: 2px;
   font-size: 1em;
@@ -226,10 +226,10 @@ iframe {
   margin: 10px 20px;
   padding: 10px;
   width: 100px;
-  border: solid 1px rgb(121, 210, 249);
+  border: solid 1px rgb(103, 189, 251);
   border-radius: 3px;
   color: rgb(251, 251, 251);
-  background-color: rgb(121, 210, 249);
+  background-color: rgb(103, 189, 251);
   font-size: 1em;
   cursor: pointer;
 }
@@ -240,7 +240,7 @@ iframe {
 }
 
 #section-form button:hover {
-  background-color: rgb(78, 199, 252);
+  background-color: rgb(66, 172, 251);
 }
 
 

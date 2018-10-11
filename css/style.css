@@ -198,13 +198,12 @@ iframe {
 }
 
 #section-form {
-  height: 300px;
+  padding: 100px 10px;
   text-align: center;
   font-family: Roboto, sans-serif;
 }
 
 #section-form-title {
-  padding-top: 50px;
   font-size: 2.5em
 }
 
@@ -216,6 +215,13 @@ iframe {
 #section-form input {
   margin: 10px 5px;
   padding: 10px;
+}
+
+@media (max-width: 787px) {
+  #section-form input {
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 #email {
@@ -238,7 +244,6 @@ iframe {
 #submit:hover {
   background-color: rgb(66, 172, 251);
 }
-
 
 /* Footer */
 #footer {

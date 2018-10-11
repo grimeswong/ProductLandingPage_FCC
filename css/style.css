@@ -53,11 +53,26 @@ html, body {  /* reset the user agent setting*/
   padding: 0 5px;
 }
 
-#header-img {
+#img-wrapper {
   display: inline;
+  height: 100%;
+}
+
+#header-img {
   padding: 10px;
   height: 80%;
   float: left;
+}
+
+/* responsive bigger than mobile and lower than tablet size */
+@media (min-width: 577px) and (max-width: 768px) {
+  #nav-list-left li {
+    font-size: 1em;
+  }
+  #header-img {
+    height: 50%;
+    padding: 25px 10px;
+  }
 }
 
 #nav-list-right {

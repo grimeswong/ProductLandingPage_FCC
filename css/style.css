@@ -198,7 +198,6 @@ iframe {
 
 #section-form {
   height: 300px;
-  /* background-color: rgb(237, 251, 152);  /* Deleted after testing */ */
   text-align: center;
   font-family: Roboto, sans-serif;
 }
@@ -214,17 +213,18 @@ iframe {
 }
 
 #section-form input {
-  margin: 10px auto;
+  margin: 10px 5px;
   padding: 10px;
-  min-width: 200px;
+}
+
+#email {
+  min-width: 300px;
   border: solid 1px #ccc;
   border-radius: 2px;
   font-size: 1em;
 }
 
-#section-form button {
-  margin: 10px 20px;
-  padding: 10px;
+#submit {
   width: 100px;
   border: solid 1px rgb(103, 189, 251);
   border-radius: 3px;
@@ -234,12 +234,7 @@ iframe {
   cursor: pointer;
 }
 
-#section-form a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-#section-form button:hover {
+#submit:hover {
   background-color: rgb(66, 172, 251);
 }
 

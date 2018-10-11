@@ -29,6 +29,7 @@ html, body {  /* reset the user agent setting*/
 
 #nav-bar a {
   text-decoration: none;
+  color: rgb(59, 59, 59);
 }
 
 #nav-bar a:hover {
@@ -197,14 +198,12 @@ iframe {
 }
 
 #section-form {
-  height: 300px;
-  /* background-color: rgb(237, 251, 152);  /* Deleted after testing */ */
+  padding: 100px 10px;
   text-align: center;
   font-family: Roboto, sans-serif;
 }
 
 #section-form-title {
-  padding-top: 50px;
   font-size: 2.5em
 }
 
@@ -214,17 +213,25 @@ iframe {
 }
 
 #section-form input {
-  margin: 10px auto;
+  margin: 10px 5px;
   padding: 10px;
-  min-width: 200px;
+}
+
+@media (max-width: 787px) {
+  #section-form input {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+#email {
+  min-width: 300px;
   border: solid 1px #ccc;
   border-radius: 2px;
   font-size: 1em;
 }
 
-#section-form button {
-  margin: 10px 20px;
-  padding: 10px;
+#submit {
   width: 100px;
   border: solid 1px rgb(103, 189, 251);
   border-radius: 3px;
@@ -234,20 +241,14 @@ iframe {
   cursor: pointer;
 }
 
-#section-form a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-#section-form button:hover {
+#submit:hover {
   background-color: rgb(66, 172, 251);
 }
-
 
 /* Footer */
 #footer {
   margin:0 auto;
-  padding: 40px 0;  
+  padding: 40px 0;
   width: 100%;
   height: 100px;
   color: white;

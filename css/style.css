@@ -7,24 +7,37 @@ html, body {  /* reset the user agent setting*/
 #header {
   margin: 0;
   padding: 0;
+  position: fixed;
+  display: block;
   width: 100%;
   height: 100px;
-  display: block;
   color: rgb(26, 24, 24);
   background-color: rgb(255, 255, 255);
-  position: fixed;
 }
 
 #nav-bar {
   padding: 0 5%;
   height: 100%;
+  line-height: 100px;
+}
+
+#nav-bar-left {
+  display: inline;
+  float: left;
+}
+
+#nav-bar-right {
+  float: right;
+}
+
+#nav-list-right {
+  display: flex;
+  flex-direction: row;
 }
 
 #nav-bar li {
-  display: inline;
   font-family: "Fredoka One", sans-serif;
   color: rgb(59, 59, 59);
-  height: 100%;
 }
 
 #nav-bar a {
@@ -40,12 +53,9 @@ html, body {  /* reset the user agent setting*/
   color: rgb(59, 59, 59);
 }
 
-#nav-list-left {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  line-height: 100px;
-  float: left;
+#nav-bar ul {
+  margin: 0;  /* reset user agent setting */
+  list-style: none;
 }
 
 #nav-list-left li{
@@ -53,41 +63,10 @@ html, body {  /* reset the user agent setting*/
   padding: 0 5px;
 }
 
-#img-wrapper {
-  display: inline;
-  height: 100%;
-}
-
-#header-img {
-  padding: 10px;
-  height: 80%;
-  float: left;
-}
-
-/* responsive bigger than mobile and lower than tablet size */
-@media (min-width: 577px) and (max-width: 768px) {
-  #nav-list-left li {
-    font-size: 1em;
-  }
-  #header-img {
-    height: 50%;
-    padding: 25px 10px;
-  }
-}
-
-#nav-list-right {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  line-height: 100px;
-  float: right;
-}
-
 #nav-list-right li {
-  padding: 15px;
+  padding: 0 15px;
   font-size: 1.2em;
 }
-
 
 /* Main */
 #main {

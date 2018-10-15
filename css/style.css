@@ -1,4 +1,4 @@
-html, body {  /* reset the user agent setting*/
+html, body, ul{  /* reset the user agent setting*/
     margin: 0;
     padding: 0;
 }
@@ -22,12 +22,18 @@ html, body {  /* reset the user agent setting*/
 }
 
 #nav-bar-left {
-  display: inline;
-  float: left;
+  height: 100%;
+  float:left;
 }
 
 #nav-bar-right {
   float: right;
+}
+
+#nav-list-left {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 #nav-list-right {
@@ -55,18 +61,28 @@ html, body {  /* reset the user agent setting*/
 
 #nav-bar ul {
   margin: 0;  /* reset user agent setting */
+  padding: 0;
   list-style: none;
-}
-
-#nav-list-left li{
-  font-size: 1.5em;
-  padding: 0 5px;
 }
 
 #nav-list-right li {
   padding: 0 15px;
   font-size: 1.2em;
 }
+
+#nav-bar-left p {
+  padding: 10px 5px;
+  font-size: 1.5em;
+  font-family: "Fredoka One", sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+#nav-bar-left img {
+  padding: 10px 5px;
+  height: 80%;
+}
+
+
 
 /* Main */
 #main {

@@ -10,7 +10,6 @@ html, body, ul{  /* reset the user agent setting*/
   position: fixed;
   display: block;
   width: 100%;
-  height: 100px;
   color: rgb(26, 24, 24);
   background-color: rgb(255, 255, 255);
 }
@@ -23,11 +22,6 @@ html, body, ul{  /* reset the user agent setting*/
 
 #nav-bar-left {
   height: 100%;
-  float:left;
-}
-
-#nav-bar-right {
-  float: right;
 }
 
 #nav-list-left {
@@ -82,6 +76,18 @@ html, body, ul{  /* reset the user agent setting*/
   height: 80%;
 }
 
+@media (min-width: 577px) {  /* except mobile */
+  #header {
+    height: 100px;
+  }
+  #nav-bar-left {
+    float: left;
+  }
+  #nav-bar-right {
+    float: right;
+  }
+}
+
 /* responsive bigger than mobile and lower than tablet size */
 @media (min-width: 577px) and (max-width: 768px) {
   #nav-bar {
@@ -97,6 +103,22 @@ html, body, ul{  /* reset the user agent setting*/
 
   #nav-list-right li {
     font-size: 1em;
+  }
+}
+
+/* mobile size */
+@media (max-width: 576px) {
+  #nav-list-left {
+    justify-content: center;
+  }
+  #nav-bar-left img {
+    height: 50px;
+  }
+  #nav-list-right {
+    flex-direction: column;
+  }
+  #nav-list-right li {
+    text-align: center;
   }
 }
 

@@ -108,12 +108,18 @@ html, body, ul{  /* reset the user agent setting*/
 
 /* mobile size */
 @media (max-width: 576px) {
+  #nav-bar {
+    line-height: 50px;
+  }
+
   #nav-list-left {
+    height: 80px;
     justify-content: center;
   }
   #nav-bar-left img {
     height: 50px;
   }
+
   #nav-list-right {
     flex-direction: column;
   }

@@ -123,10 +123,12 @@ html, body, ul{  /* reset the user agent setting*/
 
   #nav-list-right {
     flex-direction: column;
+    display:none;
   }
   #nav-list-right li {
     text-align: center;
   }
+
 }
 
 

@@ -108,6 +108,7 @@ html, body, ul{  /* reset the user agent setting*/
 
 /* mobile size */
 @media (max-width: 576px) {
+
   #nav-bar {
     line-height: 50px;
   }

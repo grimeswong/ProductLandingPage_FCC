@@ -105,6 +105,10 @@ html, body, ul{  /* reset the user agent setting*/
     padding: 25px 10px;
   }
 
+  #nav-list-right {
+    display: flex;
+  }
+
   #nav-list-right li {
     font-size: 1em;
   }

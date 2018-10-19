@@ -8,3 +8,11 @@ function toggleMenu() {
     $("#nav-list-right").css("display", "none");
   }
 }
+
+$(window).resize(function() {
+    if($(window).outerWidth() > 576) {
+      $("#nav-list-right").css("display", "flex");
+    } else if($(window).width() <= 576){
+      $("#nav-list-right").css("display", "none");
+    }
+});

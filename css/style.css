@@ -76,6 +76,10 @@ html, body, ul{  /* reset the user agent setting*/
   height: 80%;
 }
 
+.icon {
+  display: none;
+}
+
 @media (min-width: 577px) {  /* except mobile */
   #header {
     height: 100px;
@@ -127,6 +131,13 @@ html, body, ul{  /* reset the user agent setting*/
   }
   #nav-list-right li {
     text-align: center;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
 }

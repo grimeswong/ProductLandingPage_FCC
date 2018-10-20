@@ -221,21 +221,39 @@ html, body, ul{  /* reset the user agent setting*/
 
 #main-wrapper {
   margin: 0 auto;
-  width: 80%;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);  /* for testing the layout only, can delete once is done */
   text-align: center;
 }
 
 #section-feature {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   background-color: rgb(251, 100, 122)
+}
+
+@media (min-width: 1200px) {
+  #section-feature {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-feature {
+    width: 100%;
+  }
 }
 
 #feature-list {
   margin: 0px auto;
   padding: 20px;
   background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  #feature-list {
+    padding: 50px 20px;
+  }
 }
 
 .feature-item {

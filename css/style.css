@@ -280,6 +280,18 @@ html, body, ul{  /* reset the user agent setting*/
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  #section-video {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-video {
+    width: 100%;
+  }
+}
+
 iframe {
   width: 640px;
   height: 390px;

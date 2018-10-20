@@ -178,14 +178,33 @@ html, body, ul{  /* reset the user agent setting*/
   }
 }
 
+@media (max-width: 768px) {
+  #hero-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .left-hero {
   margin: 0 auto;  /* centralise the image */
   padding: 200px 20px 20px;
 }
 
 .right-hero {
-  padding: 200px 20px 20px;
+  padding: 200px 30px;
   text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .right-hero {
+    padding: 200px 5%;
+  }
+}
+@media (max-width: 768px) {
+  .right-hero {
+    padding: 20px 30px;
+    text-align: center;
+  }
 }
 
 #hero-intro-title {

@@ -315,11 +315,11 @@ iframe {
   margin: 0 auto;
   padding: 150px 0;
   width: 100%;
-  background-color: rgb(103, 189, 251);  /* delete after testing */
+  background-color: rgb(219, 166, 175);
 }
 
 #section-pricing-title {
-  color: rgb(59, 59, 59);
+  color: rgb(27, 26, 26);
   font-size: 2.5em;
   font-weight: bold;
   font-family: "Fredoka One", sans-serif;

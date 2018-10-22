@@ -358,9 +358,23 @@ iframe {
 .pricing-item {
   margin: 10px 5px;
   padding: 10px 5px;
+  position: relative;  /* must apply this that the child item can change adapt their position */
   background-color: rgb(255, 255, 255);
   width: 30%;
   height: 400px;
+  text-align: center;
+}
+
+.pricing-item div {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pricing-item button {
+  
 }
 
 @media (max-width: 767px) {

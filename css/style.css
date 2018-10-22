@@ -12,6 +12,7 @@ html, body, ul{  /* reset the user agent setting*/
   width: 100%;
   color: rgb(26, 24, 24);
   background-color: rgb(255, 255, 255);
+  z-index: 100; /* cover other relative element */
 }
 
 #nav-bar {

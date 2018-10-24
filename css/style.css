@@ -12,6 +12,7 @@ html, body, ul{  /* reset the user agent setting*/
   width: 100%;
   color: rgb(26, 24, 24);
   background-color: rgb(255, 255, 255);
+  z-index: 100; /* cover other relative element */
 }
 
 #nav-bar {
@@ -312,31 +313,102 @@ iframe {
 }
 
 #section-pricing {
-  margin: 0 auto;
+  margin: 0;
   padding: 150px 0;
   width: 100%;
-  background-color: rgb(103, 189, 251);  /* delete after testing */
+  background-color: rgb(255,192,203);
+}
+
+@media (max-width: 576px) {
+  #section-pricing {
+    padding: 50px 0;
+  }
 }
 
 #section-pricing-title {
-  color: rgb(59, 59, 59);
+  color: rgb(0, 0, 0);
   font-size: 2.5em;
   font-weight: bold;
   font-family: "Fredoka One", sans-serif;
 }
 
 #pricing-wrapper {
-  padding: 50px 10px;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+@media (min-width: 1200px) {
+  #pricing-wrapper {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 767px) {
+  #pricing-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
 .pricing-item {
-  padding: 10px 5px;
+  margin: 10px 5px;
+  padding: 10px 4%;
+  position: relative;  /* must apply this that the child item can change adapt their position */
   background-color: rgb(255, 255, 255);
   width: 30%;
   height: 400px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pricing-item {
+    padding: 10px 5%;
+    height: 300px;
+  }
+}
+
+.pricing-item div {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pricing-item button {
+  padding: 10px 30px;
+  border: solid 1px rgb(103, 189, 251);
+  border-radius: 3px;
+  color: rgb(251, 251, 251);
+  background-color: rgb(103, 189, 251);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.pricing-item button:hover {
+
+  border: solid 2px rgb(103, 189, 251);
+  color: rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.pricing-item-price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .pricing-item {
+    width: 80%;
+  }
 }
 
 #section-form {

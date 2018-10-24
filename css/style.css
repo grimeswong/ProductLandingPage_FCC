@@ -375,7 +375,22 @@ iframe {
 }
 
 .pricing-item button {
-  
+  padding: 10px 30px;
+  border: solid 1px rgb(103, 189, 251);
+  border-radius: 3px;
+  color: rgb(251, 251, 251);
+  background-color: rgb(103, 189, 251);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.pricing-item button:hover {
+
+  border: solid 2px rgb(103, 189, 251);
+  color: rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 @media (max-width: 767px) {

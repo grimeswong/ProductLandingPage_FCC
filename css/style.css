@@ -358,12 +358,19 @@ iframe {
 
 .pricing-item {
   margin: 10px 5px;
-  padding: 10px 5px;
+  padding: 10px 4%;
   position: relative;  /* must apply this that the child item can change adapt their position */
   background-color: rgb(255, 255, 255);
   width: 30%;
   height: 400px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pricing-item {
+    padding: 10px 5%;
+    height: 300px;
+  }
 }
 
 .pricing-item div {
@@ -391,6 +398,11 @@ iframe {
   background-color: rgb(255, 255, 255);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+}
+
+.pricing-item-price {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {

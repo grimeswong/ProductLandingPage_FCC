@@ -191,6 +191,10 @@ html, body, ul{  /* reset the user agent setting*/
   padding: 200px 20px 20px;
 }
 
+.left-hero img {
+  border-radius: 50%;
+}
+
 .right-hero {
   padding: 200px 30px;
   text-align: left;

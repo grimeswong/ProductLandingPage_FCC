@@ -166,6 +166,12 @@ html, body, ul{  /* reset the user agent setting*/
   color: rgb(255, 255, 255);
 }
 
+@media (max-width: 576px) {
+  #main p {
+    font-size: 1.2em;
+  }
+}
+
 #section-hero {
   padding-top: 100px;  /* avoid nav-bar cover the top content of section-hero */
   width: 100%;
@@ -311,6 +317,10 @@ html, body, ul{  /* reset the user agent setting*/
   .feature-icon img{
     min-width: 40%;
     max-width: 50%;
+  }
+
+  .feature-desc p {
+    font-size: 1.2em;
   }
 }
 

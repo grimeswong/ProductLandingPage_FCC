@@ -169,15 +169,26 @@ html, body, ul{  /* reset the user agent setting*/
 #section-hero {
   padding-top: 100px;  /* avoid nav-bar cover the top content of section-hero */
   width: 100%;
-  height: 800px;
   background-color: rgb(140, 217, 255);
   color: rgb(255, 255, 255);
+}
+
+@media (min-width: 577px) {
+  #section-hero {
+    height: 800px;
+  }
+}
+
+@media (max-width: 576px) {
+  #section-hero {
+    padding-bottom: 100px;
+  }
 }
 
 #hero-wrapper {
   margin: 0 auto;
   width: 80%;
-  height: 600px;
+  height: 100%;
   display: grid;
   grid-template-columns: 40% 60%;
   color: rgb(37, 37, 37);

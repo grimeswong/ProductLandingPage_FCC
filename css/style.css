@@ -91,6 +91,17 @@ html, body, ul{  /* reset the user agent setting*/
   #nav-bar-right {
     float: right;
   }
+  #nav-list-right>li>a {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  #nav-list-right a:hover {
+    color: rgb(0,0,0);
+    background-color: rgb(140, 217, 255);
+  }
 }
 
 /* responsive bigger than mobile and lower than tablet size */

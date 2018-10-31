@@ -166,6 +166,16 @@ html, body, ul{  /* reset the user agent setting*/
   color: rgb(255, 255, 255);
 }
 
+#main p {
+  font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 576px) {
+  #main p {
+    font-size: 1.2em;
+  }
+}
+
 #section-hero {
   padding-top: 100px;  /* avoid nav-bar cover the top content of section-hero */
   width: 100%;
@@ -259,6 +269,7 @@ html, body, ul{  /* reset the user agent setting*/
   background-color: rgb(251, 100, 122)
 }
 
+
 @media (min-width: 1200px) {
   #section-feature {
     width: 60%;
@@ -299,6 +310,28 @@ html, body, ul{  /* reset the user agent setting*/
   padding: 0 30px;
   display: flex;
   flex-direction: column;
+}
+
+.feature-desc h2 {
+  font-family: Lora, serif;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .feature-item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .feature-icon img{
+    min-width: 40%;
+    max-width: 50%;
+  }
+
+  .feature-desc p {
+    font-size: 1.2em;
+  }
 }
 
 #section-video {
@@ -345,6 +378,7 @@ iframe {
   background-color: rgb(255,192,203);
 }
 
+
 @media (max-width: 576px) {
   #section-pricing {
     padding: 50px 0;
@@ -365,6 +399,11 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#pricing-wrapper h2, h3{
+  font-family: Lora, serif;
+  font-weight: bold;
 }
 
 @media (min-width: 1200px) {
@@ -388,14 +427,23 @@ iframe {
   position: relative;  /* must apply this that the child item can change adapt their position */
   background-color: rgb(255, 255, 255);
   width: 30%;
-  height: 400px;
+  /* height: 400px; */
   text-align: center;
 }
 
-@media (max-width: 767px) {
+.pricing-item h2 {
+  height: 50px;
+  padding-bottom: 20px;
+}
+
+.pricing-item p {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 576px) {
   .pricing-item {
     padding: 10px 5%;
-    height: 300px;
+    /* height: 300px; */
   }
 }
 
@@ -405,6 +453,7 @@ iframe {
   left: 0;
   right: 0;
   margin: auto;
+  padding-top: 50px;
 }
 
 .pricing-item button {

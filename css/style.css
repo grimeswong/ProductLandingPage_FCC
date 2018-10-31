@@ -360,15 +360,15 @@ iframe {
 
 @media (min-width: 1200px) {
   iframe {
-    width: 40vw;
-    height: 22.5vw;
+    width: 50vw;
+    height: 28.12vw;
   }
 }
 
 @media (max-width: 767px) {
   iframe {
-    width: 100vw;
-    height: 56.24vw;
+    width: 90vw;
+    height: 50.61vw;
   }
 }
 

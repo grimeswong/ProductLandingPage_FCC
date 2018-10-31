@@ -336,6 +336,7 @@ html, body, ul{  /* reset the user agent setting*/
 
 #section-video {
   margin: 50px auto;
+  padding: 100px 0;
   width: 80%;
   text-align: center;
 }

@@ -488,6 +488,7 @@ iframe {
 }
 
 #section-form {
+  margin: auto;
   padding: 100px 10px;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -515,12 +516,22 @@ iframe {
 }
 
 #email {
-  min-width: 300px;
   border: solid 1px #ccc;
   border-radius: 2px;
   font-size: 1em;
 }
 
+@media (min-width: 577px) {
+  #email {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 577px) {
+  #email {
+    width: 90%;
+  }
+}
 #submit {
   width: 100px;
   border: solid 1px rgb(103, 189, 251);

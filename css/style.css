@@ -336,6 +336,7 @@ html, body, ul{  /* reset the user agent setting*/
 
 #section-video {
   margin: 50px auto;
+  padding: 100px 0;
   width: 80%;
   text-align: center;
 }
@@ -359,15 +360,15 @@ iframe {
 
 @media (min-width: 1200px) {
   iframe {
-    width: 40vw;
-    height: 22.5vw;
+    width: 50vw;
+    height: 28.12vw;
   }
 }
 
 @media (max-width: 767px) {
   iframe {
-    width: 100vw;
-    height: 56.24vw;
+    width: 90vw;
+    height: 50.61vw;
   }
 }
 
@@ -487,6 +488,7 @@ iframe {
 }
 
 #section-form {
+  margin: auto;
   padding: 100px 10px;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -514,12 +516,22 @@ iframe {
 }
 
 #email {
-  min-width: 300px;
   border: solid 1px #ccc;
   border-radius: 2px;
   font-size: 1em;
 }
 
+@media (min-width: 577px) {
+  #email {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 577px) {
+  #email {
+    width: 90%;
+  }
+}
 #submit {
   width: 100px;
   border: solid 1px rgb(103, 189, 251);
